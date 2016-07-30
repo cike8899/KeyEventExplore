@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<div>
+    name:<input type="text" placeholder="请输入姓名..."/>
+</div>
+</body>
+<script type="application/javascript">
+    window.onload = function () {
+        var dom = document.querySelector("input[type=text]");
+        dom.addEventListener('keydown', function (e) {
+            console.info('keydown');
+            handleKeyDown(e);
+        });
+        dom.addEventListener('change', function (e) {
+            console.info('change');
+            handleKeyUp(e);
+        });
+        dom.addEventListener('keyup', function (e) {
+            console.info('keyup');
+            handleKeyDown()
+        });
+        dom.addEventListener('input', function (e) {
+            console.info('input');
+            handleKeyDown()
+        });
+        dom.addEventListener('keypress', function (e) {
+            console.info('keypress');
+        });
+    }
+    function handleKeyDown() {
+
+    }
+    function handleKeyUp() {
+
+    }
+    function handleChange() {
+
+    }
+</script>
+</html>
